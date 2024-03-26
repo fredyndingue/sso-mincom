@@ -1,0 +1,69 @@
+* c'est quoi le SSO
+  SSO, ou Single Sign-On, est un mécanisme d'authentification et d'autorisation qui permet à un utilisateur de se connecter une seule fois à un système informatique, 
+  puis d'accéder à plusieurs applications ou services sans avoir à s'authentifier à nouveau à chacun d'entre eux. 
+  L'idée derrière le SSO est de simplifier l'expérience de l'utilisateur en lui évitant d'avoir à gérer plusieurs identifiants et mots de passe pour chaque application.
+
+* comment ca marche
+  Lorsqu'un utilisateur se connecte à un système compatible avec le SSO, il fournit ses informations d'identification une seule fois, généralement un nom d'utilisateur et un mot de passe. 
+  Le système d'authentification vérifie ces   informations et génère un jeton d'authentification qui est ensuite utilisé pour accéder aux autres applications ou services. 
+  Ce jeton peut prendre différentes formes, telles qu'un cookie stocké sur l'appareil de l'utilisateur ou un jeton cryptographique.
+
+  Lorsque l'utilisateur tente d'accéder à une autre application ou service compatible avec le SSO, cette application vérifie le jeton d'authentification pour déterminer si l'utilisateur est déjà authentifié. 
+  Si le jeton est valide, l'utilisateur est automatiquement connecté à l'application sans avoir à fournir de nouvelles informations d'identification.
+
+* avanatges
+  Le SSO présente plusieurs avantages, notamment :
+  . Commodité : Les utilisateurs n'ont besoin de se souvenir que d'un seul ensemble d'informations d'identification, ce qui facilite l'accès à plusieurs applications ou services.
+  . Productivité : Le SSO réduit le temps perdu à saisir des identifiants et des mots de passe à plusieurs reprises, ce qui améliore l'efficacité et la productivité des utilisateurs.
+  . Sécurité : Le SSO permet de centraliser et de renforcer les mécanismes de contrôle d'accès, facilitant ainsi la gestion des autorisations et la mise en œuvre de politiques de sécurité cohérentes.
+
+* Les protocoles d'authentification les plus couramment utilisés pour le SSO 
+  . SAML (Security Assertion Markup Language) : 
+    SAML est un protocole basé sur XML largement utilisé pour l'échange d'informations d'authentification et d'autorisation 
+    entre un fournisseur d'identité (Identity Provider - IdP) et un fournisseur de services (Service Provider - SP). 
+    Il permet l'authentification d'un utilisateur sur un IdP et la transmission sécurisée des assertions d'authentification au SP pour l'accès aux ressources.
+
+  . OpenID Connect : 
+    OpenID Connect est un protocole basé sur OAuth 2.0 qui fournit une couche d'authentification supplémentaire. 
+    Il permet à un utilisateur de s'authentifier auprès d'un fournisseur d'identité (OpenID Provider - OP) et de recevoir un jeton d'identité (ID token) 
+    qui peut être utilisé pour l'accès aux ressources auprès des fournisseurs de services (Relying Parties - RPs). 
+    OpenID Connect est devenu très populaire en raison de sa simplicité et de sa compatibilité avec OAuth 2.0.
+
+  . OAuth (Open Authorization) : 
+    OAuth est un protocole d'autorisation qui permet à une application tierce d'accéder aux ressources d'un utilisateur en utilisant des jetons d'accès. 
+    Bien qu'il ne soit pas spécifiquement conçu pour le SSO, OAuth est souvent utilisé dans le contexte du SSO 
+    pour permettre à une application de demander l'autorisation d'accéder aux informations d'identification d'un utilisateur auprès d'un fournisseur d'identité.
+
+* besoins courants auxquels cela peut répondre :
+
+  . Authentification unique : 
+    L'un des principaux besoins est de permettre aux utilisateurs de se connecter une seule fois pour accéder à plusieurs applications et systèmes. 
+    Cela améliore l'expérience utilisateur en évitant la nécessité de saisir des identifiants multiples.
+
+  . Sécurité renforcée : 
+    Le SSO peut renforcer la sécurité en centralisant le processus d'authentification et en appliquant des politiques de sécurité cohérentes à travers toutes les applications. 
+    Les contrôles d'accès et les politiques de mot de passe peuvent être gérés de manière centralisée, ce qui facilite la mise en œuvre de pratiques de sécurité robustes.
+
+  . Simplification de la gestion des utilisateurs : 
+    Le SSO peut simplifier la gestion des utilisateurs en centralisant la gestion des comptes et des autorisations. 
+    Les administrateurs peuvent gérer les droits d'accès et les autorisations des utilisateurs à partir d'un seul point de contrôle, ce qui réduit la complexité et les erreurs potentielles.
+
+  . Productivité accrue : 
+    En éliminant la nécessité pour les utilisateurs de se connecter à chaque application individuellement, le SSO permet de gagner du temps et d'améliorer la productivité. 
+    Les utilisateurs peuvent accéder rapidement et facilement aux applications dont ils ont besoin, ce qui réduit les interruptions et les frictions liées à la gestion des mots de passe.
+
+  . Expérience utilisateur améliorée : 
+    Le SSO offre une expérience utilisateur transparente en permettant aux utilisateurs de naviguer entre différentes applications sans avoir à se reconnecter à chaque fois. 
+    Cela améliore la convivialité et la satisfaction des utilisateurs.
+
+  . Intégration avec des fournisseurs de services externes : 
+    Si une entreprise a besoin de collaborer avec des fournisseurs de services externes, le SSO peut faciliter l'intégration et l'accès sécurisé à ces services. 
+    Les partenaires ou les clients peuvent se connecter à l'environnement de l'entreprise à l'aide de leurs propres identifiants, simplifiant ainsi la gestion des accès externes.
+
+  . Conformité réglementaire : 
+    Pour certaines entreprises, la mise en place du SSO peut être motivée par des exigences de conformité réglementaire. 
+    Le SSO permet de mieux contrôler les accès, de suivre les activités des utilisateurs et de répondre aux exigences de sécurité et de confidentialité des données.
+
+  . Réduction des coûts : 
+    En centralisant la gestion des identités et des accès, le SSO peut réduire les coûts associés à la gestion des utilisateurs et à la récupération des mots de passe oubliés. 
+    Il peut également simplifier le processus d'intégration des nouvelles applications dans l'environnement de l'entreprise.

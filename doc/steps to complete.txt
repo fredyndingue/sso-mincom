@@ -1,0 +1,26 @@
+15 mars 2024
+
+1. créer une API simple avec Laravel (un seul controleur, un seul endpoint)
+
+2. repéter le procédé en 1. pour créer 5 API Laravel
+   (API Accreditation, API Carrières, API Archives, API Stock, API Publicité).
+   Les projets auront respectivement les noms suivants:
+   api-accreditation api-carrieres api-archives api-stock api-publicite
+
+3. implémneter le SSO OAuth2 pour dans une API Laravel en suivant le lien
+   https://medium.com/@mark.tabletpc/implementing-oauth2-single-sign-on-sso-in-a-laravel-step-by-step-guide-ab910e26c22a 
+
+4. créer une API dénommée api-portal et adapter l'implémentation du 3. à cette nouvelle api.
+
+5. configurer les 5 API créées en 2. pour qu'ils acceptent le token généré par le portail API
+
+6. créer les frontend Angular des 5 api Laravel.
+   chaque front doit avoir une page d'accueil et une page de test.
+   l'accès à toutes les pages doivent etre restreint aux utilisateurs connectés.
+
+7. créer le frontend Angular du portail.
+   on doit avoir une page attrayante à l'image du MINCOM avec un bouton de connexion et un bouton de deconnexion si le user est déjà connecté.
+   le clic sur le bouton de connexion doit appler la méthode /auth/google (redirection vers google).
+   une fois le process d'auth terminé, le user doit etre redirigé vers une page qui présente les 5 applis.
+   le clic sur une appli, doit diriger le user vers la page d'accueil de l'appli sollicitée.
+

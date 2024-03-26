@@ -1,0 +1,11 @@
+ce document présente la liste des taches exéutées pour l'accomplissement de ce projet.
+
+* comprendre les généralités sur le SSO
+  . ce que c'est
+  . comment ca marche
+  . les avanatges et incovénients
+* les solutions existentes de SSO
+  . 
+* les framework de mise en oeuvre
+* chosir un framework et rechercher comment mettre en oeuvre le SSO avec ce framework (Laravel et Flutter)
+* implémenter une POC 

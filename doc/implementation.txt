@@ -1,0 +1,5 @@
+https://github.com/mi-lopez/laravel-sso
+
+https://medium.com/@mark.tabletpc/implementing-oauth2-single-sign-on-sso-in-a-laravel-step-by-step-guide-ab910e26c22a
+
+https://frontegg.com/guides/laravel-sso

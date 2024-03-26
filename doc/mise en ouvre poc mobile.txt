@@ -1,0 +1,20 @@
+Pour mettre en œuvre une preuve de concept (POC) de SSO sur mobile avec 4 applications fictives, vous pouvez suivre ces étapes :
+
+Choisissez un fournisseur d'identité (IdP) qui prend en charge les protocoles de SSO adaptés à votre POC, tels que OAuth 2.0 ou OpenID Connect. 
+Certains fournisseurs populaires incluent Keycloak, Okta, Auth0, Firebase Authentication, etc.
+
+Configurez votre fournisseur d'identité pour créer quatre applications clientes distinctes, une pour chaque application fictive de votre POC. 
+Chaque application cliente doit avoir son propre identifiant client (client ID) et, éventuellement, un secret partagé (client secret) selon les exigences du fournisseur d'identité.
+
+Intégrez l'Identity Provider (IdP) dans chacune de vos applications mobiles fictives. 
+Utilisez les bibliothèques ou SDK fournis par votre fournisseur d'identité pour gérer l'authentification et l'autorisation dans chaque application.
+
+Configurez les redirections d'URL appropriées dans les configurations de vos applications mobiles pour interagir avec le fournisseur d'identité. 
+Cela implique de configurer les URL de redirection pour chaque application cliente dans le fournisseur d'identité, afin que les utilisateurs soient redirigés vers la bonne application après l'authentification.
+
+Implémentez le flot d'authentification dans chaque application mobile. Lorsqu'un utilisateur tente de se connecter à une application, redirigez-le vers l'Identity Provider pour l'authentification. 
+Une fois authentifié, l'IdP renverra un jeton d'accès à l'application mobile, qui peut être utilisé pour accéder aux ressources protégées de cette application.
+
+Assurez-vous que chaque application mobile stocke le jeton d'accès de manière sécurisée, en utilisant des mécanismes appropriés tels que le stockage sécurisé du système d'exploitation ou les clés d'authentification fournies par le fournisseur d'identité.
+
+Testez la POC en vous assurant que l'authentification, la redirection vers l'Identity Provider, l'obtention du jeton d'accès et l'accès aux ressources fonctionnent correctement pour chaque application mobile.
