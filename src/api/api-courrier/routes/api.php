@@ -5,7 +5,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use App\Http\Controllers\DataController;
 
-
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -20,5 +19,4 @@ use App\Http\Controllers\DataController;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
-
-Route::get('/post', 'DataController@index');
+Route::get('/posts', 'DataController@index');
